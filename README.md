@@ -22,8 +22,7 @@ $ mvn clean test -Dtest=GetEmployee allure:report
 <summary>
 LOGS
 </summary>
-<p></p>
-</details>
+<p>
 
 ```maven
 okta@okta:~/Documents/GitHub/RestAssuredAllureTestNG$ mvn clean test -Dtest=GetEmployee allure:report
@@ -151,8 +150,11 @@ Report successfully generated to /home/okta/Documents/GitHub/RestAssuredAllureTe
 [INFO] Finished at: 2020-08-10T15:17:48+08:00
 [INFO] ------------------------------------------------------------------------
 
-
 ```
+</p>
+</details>
+
+
 
 then go and open target/site/allure-maven-plugin/index.html
 
