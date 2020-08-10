@@ -196,7 +196,7 @@ $ allure serve
 ```
 Then allure report will be opened automatically.
 
-Sample Report:
+## Sample Report:
 ![image](https://user-images.githubusercontent.com/26521948/89760485-1621bb80-db1f-11ea-907d-836ca78970fc.png)
 
 ![image](https://user-images.githubusercontent.com/26521948/89760640-5da84780-db1f-11ea-926a-f688fd92cffb.png)
