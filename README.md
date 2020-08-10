@@ -3,10 +3,6 @@
 <br>
 
 # RestAssured + TestNG + Allure Report
-Sample Report:
-
-
-
 
 ## Run Test & Generate Allure report with Maven plugin
 ```
@@ -160,8 +156,13 @@ then go and open target/site/allure-maven-plugin/index.html
 
 ## Generate Allure report without Maven plugin
 Disable this plugin and run the test:
+<details>
+<summary>
+PLUGIN
+</summary>
+<p>
 
-```
+```maven
 <!--            <plugin>-->
 <!--                <groupId>org.apache.maven.plugins</groupId>-->
 <!--                <artifactId>maven-surefire-plugin</artifactId>-->
@@ -186,11 +187,18 @@ Disable this plugin and run the test:
 <!--                </dependencies>-->
 <!--            </plugin>-->
 ```
+</p>
+</details>
 
 ```
 $ mvn clean test -Dtest=GetEmployee
 $ allure serve
 ```
-Then allure report will be opened automatically
+Then allure report will be opened automatically.
+
+## Sample Report:
+![image](https://user-images.githubusercontent.com/26521948/89760485-1621bb80-db1f-11ea-907d-836ca78970fc.png)
+
+![image](https://user-images.githubusercontent.com/26521948/89760640-5da84780-db1f-11ea-926a-f688fd92cffb.png)
 
 
