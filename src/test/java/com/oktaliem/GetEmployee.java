@@ -11,13 +11,13 @@ public class GetEmployee {
 
     @Test
     public void getEmployee() {
-        Response response = given()
+        Response response = given().relaxedHTTPSValidation()
                 .filter(new AllureRestAssured())
-                .when()
-                .get("http://dummy.restapiexample.com/api/v1/employee/1")
-                .then()
+                .log().all()
+                .when().get("http://dummy.restapiexample.com/api/v1/employee/1")
+                .then().log().all()
                 .extract().response();
-        System.out.println(response.prettyPeek().prettyPrint());
+        System.out.println(response.asString());
         Assert.assertEquals(response.statusCode(), 200);
     }
 

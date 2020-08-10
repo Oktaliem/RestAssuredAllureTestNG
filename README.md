@@ -43,6 +43,7 @@ WARNING: All illegal access operations will be denied in a future release
 [WARNING] The POM for com.sun.xml.bind:jaxb-osgi:jar:2.2.10 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ RestAssuredAllureTestNG ---
+[INFO] Deleting /home/okta/Documents/GitHub/RestAssuredAllureTestNG/target
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ RestAssuredAllureTestNG ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
@@ -69,12 +70,23 @@ WARNING: All illegal access operations will be denied in a future release
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Request method: GET
+Request URI:    http://dummy.restapiexample.com/api/v1/employee/1
+Proxy:                  <none>
+Request params: <none>
+Query params:   <none>
+Form params:    <none>
+Path params:    <none>
+Headers:                Accept=*/*
+Cookies:                <none>
+Multiparts:             <none>
+Body:                   <none>
 HTTP/1.1 200 OK
 Cache-Control: no-cache, private, max-age=31536000
 Content-Type: application/json
-Date: Mon, 10 Aug 2020 07:17:46 GMT
+Date: Mon, 10 Aug 2020 08:48:29 GMT
 Display: staticcontent_sol
-Expires: Tue, 10 Aug 2021 07:17:44 GMT
+Expires: Tue, 10 Aug 2021 08:48:26 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
 Referrer-Policy: 
 Response: 200
@@ -100,7 +112,8 @@ Content-Length: 179
     },
     "message": "Successfully! Record has been fetched."
 }
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.311 s - in com.oktaliem.GetEmployee
+{"status":"success","data":{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},"message":"Successfully! Record has been fetched."}
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.363 s - in com.oktaliem.GetEmployee
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -120,10 +133,9 @@ Report successfully generated to /home/okta/Documents/GitHub/RestAssuredAllureTe
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  10.171 s
-[INFO] Finished at: 2020-08-10T15:17:48+08:00
+[INFO] Total time:  12.403 s
+[INFO] Finished at: 2020-08-10T16:48:32+08:00
 [INFO] ------------------------------------------------------------------------
-
 ```
 </p>
 </details>
