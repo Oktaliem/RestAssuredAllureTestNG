@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class GetEmployee {
 
     @Test
-    public void getWeather() {
+    public void getEmployee() {
         Response response = given()
                 .filter(new AllureRestAssured())
                 .when()
