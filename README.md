@@ -2,7 +2,11 @@
 <h4 align="center">SOFTWARE TESTING ENTHUSIAST</h4>
 <br>
 
-# RestAssuredAllureTestNG
+# RestAssured + TestNG + Allure Report
+Sample Report:
+
+
+
 
 ## Run Test & Generate Allure report with Maven plugin
 ```
@@ -18,7 +22,8 @@ $ mvn clean test -Dtest=GetEmployee allure:report
 <summary>
 LOGS
 </summary>
-<p>
+<p></p>
+</details>
 
 ```maven
 okta@okta:~/Documents/GitHub/RestAssuredAllureTestNG$ mvn clean test -Dtest=GetEmployee allure:report
@@ -148,45 +153,42 @@ Report successfully generated to /home/okta/Documents/GitHub/RestAssuredAllureTe
 
 
 ```
-</p>
 
 then go and open target/site/allure-maven-plugin/index.html
 
 ## Generate Allure report without Maven plugin
-Run the test by disable this plugin
+Disable this plugin and run the test:
 
 ```
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                    <systemPropertyVariables>
-                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                    </systemPropertyVariables>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>${maven-surefire-plugin.version}</version>-->
+<!--                <configuration>-->
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+<!--                    <argLine>-->
+<!--                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
+<!--                    </argLine>-->
+<!--                    <systemPropertyVariables>-->
+<!--                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>-->
+<!--                    </systemPropertyVariables>-->
+<!--                </configuration>-->
+<!--                <dependencies>-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.aspectj</groupId>-->
+<!--                        <artifactId>aspectjweaver</artifactId>-->
+<!--                        <version>${aspectj.version}</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--            </plugin>-->
 ```
 
 ```
-$ mvn clean test -Dtest=GetWeather
+$ mvn clean test -Dtest=GetEmployee
 $ allure serve
 ```
 Then allure report will be opened automatically
 
-
-Sample Report:
 
