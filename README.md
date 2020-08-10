@@ -100,28 +100,6 @@ Content-Length: 179
     },
     "message": "Successfully! Record has been fetched."
 }
-{
-    "status": "success",
-    "data": {
-        "id": 1,
-        "employee_name": "Tiger Nixon",
-        "employee_salary": 320800,
-        "employee_age": 61,
-        "profile_image": ""
-    },
-    "message": "Successfully! Record has been fetched."
-}
-{
-    "status": "success",
-    "data": {
-        "id": 1,
-        "employee_name": "Tiger Nixon",
-        "employee_salary": 320800,
-        "employee_age": 61,
-        "profile_image": ""
-    },
-    "message": "Successfully! Record has been fetched."
-}
 [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.311 s - in com.oktaliem.GetEmployee
 [INFO] 
 [INFO] Results:
