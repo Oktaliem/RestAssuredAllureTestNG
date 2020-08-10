@@ -1,1 +1,1 @@
-# RestAssAllureTestNG
+# RestAssuredAllureTestNG
