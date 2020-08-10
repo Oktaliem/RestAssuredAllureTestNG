@@ -3,10 +3,6 @@
 <br>
 
 # RestAssured + TestNG + Allure Report
-Sample Report:
-
-
-
 
 ## Run Test & Generate Allure report with Maven plugin
 ```
@@ -191,6 +187,10 @@ Disable this plugin and run the test:
 $ mvn clean test -Dtest=GetEmployee
 $ allure serve
 ```
-Then allure report will be opened automatically
+Then allure report will be opened automatically.
+
+Sample Report:
+
+
 
 
